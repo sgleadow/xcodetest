@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C99C65D815B432FD0092A9B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65D715B432FD0092A9B4 /* UIKit.framework */; };
+		C99C65DA15B432FD0092A9B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65D915B432FD0092A9B4 /* Foundation.framework */; };
+		C99C65DC15B432FD0092A9B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65DB15B432FD0092A9B4 /* CoreGraphics.framework */; };
+		C99C65E215B432FD0092A9B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C99C65E015B432FD0092A9B4 /* InfoPlist.strings */; };
+		C99C65E415B432FD0092A9B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C65E315B432FD0092A9B4 /* main.m */; };
+		C99C65E815B432FE0092A9B4 /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C65E715B432FE0092A9B4 /* TRAppDelegate.m */; };
+		C99C65F015B432FE0092A9B4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65EF15B432FE0092A9B4 /* SenTestingKit.framework */; };
+		C99C65F115B432FE0092A9B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65D715B432FD0092A9B4 /* UIKit.framework */; };
+		C99C65F215B432FE0092A9B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65D915B432FD0092A9B4 /* Foundation.framework */; };
+		C99C65FA15B432FE0092A9B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C99C65F815B432FE0092A9B4 /* InfoPlist.strings */; };
+		C99C65FD15B432FE0092A9B4 /* TriumphSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C65FC15B432FE0092A9B4 /* TriumphSampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C99C65F315B432FE0092A9B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C99C65CA15B432FD0092A9B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C99C65D215B432FD0092A9B4;
+			remoteInfo = TriumphSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C99C65D315B432FD0092A9B4 /* TriumphSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriumphSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99C65D715B432FD0092A9B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C99C65D915B432FD0092A9B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C99C65DB15B432FD0092A9B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C99C65DF15B432FD0092A9B4 /* TriumphSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TriumphSample-Info.plist"; sourceTree = "<group>"; };
+		C99C65E115B432FD0092A9B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C99C65E315B432FD0092A9B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C99C65E515B432FD0092A9B4 /* TriumphSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TriumphSample-Prefix.pch"; sourceTree = "<group>"; };
+		C99C65E615B432FE0092A9B4 /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
+		C99C65E715B432FE0092A9B4 /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
+		C99C65EE15B432FE0092A9B4 /* TriumphSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriumphSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99C65EF15B432FE0092A9B4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C99C65F715B432FE0092A9B4 /* TriumphSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TriumphSampleTests-Info.plist"; sourceTree = "<group>"; };
+		C99C65F915B432FE0092A9B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C99C65FB15B432FE0092A9B4 /* TriumphSampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriumphSampleTests.h; sourceTree = "<group>"; };
+		C99C65FC15B432FE0092A9B4 /* TriumphSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriumphSampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C99C65D015B432FD0092A9B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99C65D815B432FD0092A9B4 /* UIKit.framework in Frameworks */,
+				C99C65DA15B432FD0092A9B4 /* Foundation.framework in Frameworks */,
+				C99C65DC15B432FD0092A9B4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C99C65EA15B432FE0092A9B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99C65F015B432FE0092A9B4 /* SenTestingKit.framework in Frameworks */,
+				C99C65F115B432FE0092A9B4 /* UIKit.framework in Frameworks */,
+				C99C65F215B432FE0092A9B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C99C65C815B432FD0092A9B4 = {
+			isa = PBXGroup;
+			children = (
+				C99C65DD15B432FD0092A9B4 /* TriumphSample */,
+				C99C65F515B432FE0092A9B4 /* TriumphSampleTests */,
+				C99C65D615B432FD0092A9B4 /* Frameworks */,
+				C99C65D415B432FD0092A9B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C99C65D415B432FD0092A9B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C99C65D315B432FD0092A9B4 /* TriumphSample.app */,
+				C99C65EE15B432FE0092A9B4 /* TriumphSampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C99C65D615B432FD0092A9B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C99C65D715B432FD0092A9B4 /* UIKit.framework */,
+				C99C65D915B432FD0092A9B4 /* Foundation.framework */,
+				C99C65DB15B432FD0092A9B4 /* CoreGraphics.framework */,
+				C99C65EF15B432FE0092A9B4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C99C65DD15B432FD0092A9B4 /* TriumphSample */ = {
+			isa = PBXGroup;
+			children = (
+				C99C65E615B432FE0092A9B4 /* TRAppDelegate.h */,
+				C99C65E715B432FE0092A9B4 /* TRAppDelegate.m */,
+				C99C65DE15B432FD0092A9B4 /* Supporting Files */,
+			);
+			path = TriumphSample;
+			sourceTree = "<group>";
+		};
+		C99C65DE15B432FD0092A9B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C99C65DF15B432FD0092A9B4 /* TriumphSample-Info.plist */,
+				C99C65E015B432FD0092A9B4 /* InfoPlist.strings */,
+				C99C65E315B432FD0092A9B4 /* main.m */,
+				C99C65E515B432FD0092A9B4 /* TriumphSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C99C65F515B432FE0092A9B4 /* TriumphSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C99C65FB15B432FE0092A9B4 /* TriumphSampleTests.h */,
+				C99C65FC15B432FE0092A9B4 /* TriumphSampleTests.m */,
+				C99C65F615B432FE0092A9B4 /* Supporting Files */,
+			);
+			path = TriumphSampleTests;
+			sourceTree = "<group>";
+		};
+		C99C65F615B432FE0092A9B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C99C65F715B432FE0092A9B4 /* TriumphSampleTests-Info.plist */,
+				C99C65F815B432FE0092A9B4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C99C65D215B432FD0092A9B4 /* TriumphSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C99C660015B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "TriumphSample" */;
+			buildPhases = (
+				C99C65CF15B432FD0092A9B4 /* Sources */,
+				C99C65D015B432FD0092A9B4 /* Frameworks */,
+				C99C65D115B432FD0092A9B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TriumphSample;
+			productName = TriumphSample;
+			productReference = C99C65D315B432FD0092A9B4 /* TriumphSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C99C65ED15B432FE0092A9B4 /* TriumphSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C99C660315B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "TriumphSampleTests" */;
+			buildPhases = (
+				C99C65E915B432FE0092A9B4 /* Sources */,
+				C99C65EA15B432FE0092A9B4 /* Frameworks */,
+				C99C65EB15B432FE0092A9B4 /* Resources */,
+				C99C65EC15B432FE0092A9B4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C99C65F415B432FE0092A9B4 /* PBXTargetDependency */,
+			);
+			name = TriumphSampleTests;
+			productName = TriumphSampleTests;
+			productReference = C99C65EE15B432FE0092A9B4 /* TriumphSampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C99C65CA15B432FD0092A9B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TR;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Stewart Gleadow";
+			};
+			buildConfigurationList = C99C65CD15B432FD0092A9B4 /* Build configuration list for PBXProject "TriumphSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C99C65C815B432FD0092A9B4;
+			productRefGroup = C99C65D415B432FD0092A9B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C99C65D215B432FD0092A9B4 /* TriumphSample */,
+				C99C65ED15B432FE0092A9B4 /* TriumphSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C99C65D115B432FD0092A9B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99C65E215B432FD0092A9B4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C99C65EB15B432FE0092A9B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99C65FA15B432FE0092A9B4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C99C65EC15B432FE0092A9B4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C99C65CF15B432FD0092A9B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99C65E415B432FD0092A9B4 /* main.m in Sources */,
+				C99C65E815B432FE0092A9B4 /* TRAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C99C65E915B432FE0092A9B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99C65FD15B432FE0092A9B4 /* TriumphSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C99C65F415B432FE0092A9B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C99C65D215B432FD0092A9B4 /* TriumphSample */;
+			targetProxy = C99C65F315B432FE0092A9B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C99C65E015B432FD0092A9B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99C65E115B432FD0092A9B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C99C65F815B432FE0092A9B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99C65F915B432FE0092A9B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C99C65FE15B432FE0092A9B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C99C65FF15B432FE0092A9B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C99C660115B432FE0092A9B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TriumphSample/TriumphSample-Prefix.pch";
+				INFOPLIST_FILE = "TriumphSample/TriumphSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C99C660215B432FE0092A9B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TriumphSample/TriumphSample-Prefix.pch";
+				INFOPLIST_FILE = "TriumphSample/TriumphSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C99C660415B432FE0092A9B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TriumphSample.app/TriumphSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TriumphSample/TriumphSample-Prefix.pch";
+				INFOPLIST_FILE = "TriumphSampleTests/TriumphSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C99C660515B432FE0092A9B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TriumphSample.app/TriumphSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TriumphSample/TriumphSample-Prefix.pch";
+				INFOPLIST_FILE = "TriumphSampleTests/TriumphSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C99C65CD15B432FD0092A9B4 /* Build configuration list for PBXProject "TriumphSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C99C65FE15B432FE0092A9B4 /* Debug */,
+				C99C65FF15B432FE0092A9B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C99C660015B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "TriumphSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C99C660115B432FE0092A9B4 /* Debug */,
+				C99C660215B432FE0092A9B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C99C660315B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "TriumphSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C99C660415B432FE0092A9B4 /* Debug */,
+				C99C660515B432FE0092A9B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C99C65CA15B432FD0092A9B4 /* Project object */;
+}
