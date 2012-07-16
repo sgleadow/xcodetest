@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Triumph/Triumph.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TriumphSample/TriumphSample.xcodeproj">
    </FileRef>
 </Workspace>

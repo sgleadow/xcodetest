@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Triumph' target in the 'Triumph' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
