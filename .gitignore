@@ -1,0 +1,16 @@
+build/
+*.mode*
+*.pbxuser
+.svn
+*.orig
+*.perspective
+*.perspectivev3
+*.trace
+*project.xcworkspace/
+*.xcuserdatad
+.DS_Store
+*.orig
+*.BACKUP.*
+*.REMOTE.*
+*.LOCAL.*
+*.BASE.*
