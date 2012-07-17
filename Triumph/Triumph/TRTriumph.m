@@ -21,13 +21,6 @@
     loadedTests = dlopen("/Users/sgleadow/Dropbox/Documents/Tech/Testing/unit-test-runner/output/TriumphSampleTests.octest/TriumphSampleTests", RTLD_NOW);
     assert(loadedTests != NULL);
     
-    // Try and load one of the test classes
-    // TODO: this check needs to go in the final version
-    if (NSClassFromString(@"TriumphSampleTests"))
-    {
-        printf("Could find test\n");
-    }
-    
     [[NSNotificationCenter defaultCenter] addObserver:[self class] 
                                              selector:@selector(applicationDidBecomeActive:) 
                                                  name:@"UIApplicationDidBecomeActiveNotification" 
