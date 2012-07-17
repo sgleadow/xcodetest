@@ -1,3 +1,0 @@
-FRAMEWORK_SEARCH_PATHS= $(inherited) "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks"
-OTHER_LDFLAGS = -all_load -ObjC -lTriumph -framework SenTestingKit
-
