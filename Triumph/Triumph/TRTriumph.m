@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SenTestingKit/SenTestingKit.h>
 #import <dlfcn.h>
 
 @interface TRTriumph : NSObject
