@@ -81,7 +81,9 @@
 				C99C65D615B432FD0092A9B4 /* Frameworks */,
 				C99C65D415B432FD0092A9B4 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		C99C65D415B432FD0092A9B4 /* Products */ = {
 			isa = PBXGroup;
