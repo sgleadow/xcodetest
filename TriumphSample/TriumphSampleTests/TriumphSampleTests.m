@@ -10,6 +10,16 @@
 
 @implementation TriumphSampleTests
 
+- (void)testSampleThatAlwaysFails
+{
+    STAssertNil(@"but I'm not nil", @"Should be nil");
+}
+
+- (void)testSampleThatAlwaysPasses
+{
+    STAssertNotNil(@"I'm not nil", @"Should not be nil");
+}
+
 - (void)testSampleThatRequiresTheUIKitEnvironment
 {
     STAssertNotNil([UIApplication sharedApplication].delegate, @"There should be an app delegate");
