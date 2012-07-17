@@ -18,7 +18,7 @@
 + (void)load
 {
     void *loadedTests = NULL;
-    loadedTests = dlopen("/Users/sgleadow/Dropbox/Documents/Tech/Testing/unit-test-runner/output/TriumphSampleTests.octest/TriumphSampleTests", RTLD_NOW);
+    loadedTests = dlopen([self unitTestObjectFilePath], RTLD_NOW);
     assert(loadedTests != NULL);
     
     [[NSNotificationCenter defaultCenter] addObserver:[self class] 
@@ -27,10 +27,16 @@
                                                object:nil];
 }
 
++ (char *)unitTestObjectFilePath
+{
+    char *unitTestPath = getenv("TR_UNIT_TEST_PATH");
+    assert(unitTestPath != NULL);
+    return unitTestPath;
+}
+
 + (void)applicationDidBecomeActive:(NSNotification *)notification
 {
-    NSLog(@"\n\n\n==============\nLibrary loaded and automatically hooked into applicationDidBecomeActive\n==============\n\n\n");
-    
+    NSLog(@"\n\n\n==============\nRunning unit tests:\n%s\n==============", [self unitTestObjectFilePath]);
     SenSelfTestMain();
 }
 
