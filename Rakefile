@@ -38,7 +38,6 @@ end
 desc "Build and run the unit tests"
 task :run => ["test:build", "app:build"] do
   %x{osascript -e 'tell app \"iPhone Simulator\" to quit'}
-  #%x{TR_UNIT_TEST_PATH="#{TR_UNIT_TEST_PATH}" waxsim #{OUTPUT_DIR}/#{MAIN_APP_TARGET}.app -SenTest All}
   
   cmd = "TR_UNIT_TEST_PATH=\"#{TR_UNIT_TEST_PATH}\" waxsim #{OUTPUT_DIR}/#{MAIN_APP_TARGET}.app -SenTest All"
   report = Xcode::Test::Report.new
@@ -54,4 +53,6 @@ task :run => ["test:build", "app:build"] do
   ensure
     parser.flush
   end
+  
+  %x{osascript -e 'tell app \"iPhone Simulator\" to quit'}
 end
