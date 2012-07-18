@@ -31,8 +31,7 @@ clean:
 triumph:
 	xcodebuild -sdk iphonesimulator -scheme Triumph clean
 	rm -rf $(PATH_TO_TR_LIB)
-	# TODO: how to be know that the path from project to workspace is ..? (convert to relative path?)
-	xcodebuild -sdk iphonesimulator -scheme Triumph build CONFIGURATION_BUILD_DIR=../$(PATH_TO_TR_LIB)
+	xcodebuild -sdk iphonesimulator -scheme Triumph install
 
 .PHONY: build
 build:
