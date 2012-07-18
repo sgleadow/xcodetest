@@ -5,7 +5,7 @@ require 'xcoder'
 # User entered parameters
 MAIN_APP_TARGET = "TriumphSample"
 UNIT_TEST_TARGET = "TriumphSampleTests"
-PATH_TO_TR_LIB = "lib"
+PATH_TO_TR_LIB = "."
 
 # Build settings
 OUTPUT_DIR = "/tmp/xcodetest/#{MAIN_APP_TARGET}"
@@ -17,7 +17,6 @@ TR_LDFLAGS="\"-all_load -ObjC -framework SenTestingKit -lTriumph -L \"#{TR_ABS_L
 XcodeBuild::Tasks::BuildTask.new(:test) do |task|
   task.scheme = UNIT_TEST_TARGET
   
-  task.configuration = "Debug"
   task.sdk = "iphonesimulator"
   task.formatter = XcodeBuild::Formatters::ProgressFormatter.new
   task.add_build_setting "CONFIGURATION_BUILD_DIR", OUTPUT_DIR
@@ -26,7 +25,6 @@ end
 XcodeBuild::Tasks::BuildTask.new(:app) do |task|
   task.scheme = MAIN_APP_TARGET
   
-  task.configuration = "Debug"
   task.sdk = "iphonesimulator"
   task.formatter = XcodeBuild::Formatters::ProgressFormatter.new
   task.add_build_setting("CONFIGURATION_BUILD_DIR", OUTPUT_DIR)

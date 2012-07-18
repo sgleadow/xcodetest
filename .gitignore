@@ -16,3 +16,4 @@ build/
 *.BASE.*
 output
 lib
+libTriumph.a

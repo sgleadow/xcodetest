@@ -3,9 +3,6 @@
 ##################################
 # Parameters defined by the user #
 ##################################
-# The path to libTriumph.a if it's not in your search path
-PATH_TO_TR_LIB=lib
-
 # Name of unit test scheme and target (assumes the scheme and target have the same name)
 UNIT_TEST_TARGET=TriumphSampleTests
 
@@ -30,7 +27,7 @@ clean:
 .PHONY: triumph
 triumph:
 	xcodebuild -sdk iphonesimulator -scheme Triumph clean
-	rm -rf $(PATH_TO_TR_LIB)
+	rm -rf libTriumph.a
 	xcodebuild -sdk iphonesimulator -scheme Triumph install
 
 .PHONY: build
