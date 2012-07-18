@@ -5,14 +5,14 @@ require 'xcoder'
 # User entered parameters
 MAIN_APP_TARGET = "TriumphSample"
 UNIT_TEST_TARGET = "TriumphSampleTests"
-PATH_TO_TR_LIB = "."
+PATH_TO_XCODE_TEST_LIB = "."
 
 # Build settings
 OUTPUT_DIR = "/tmp/xcodetest/#{MAIN_APP_TARGET}"
-TR_ABS_LIB_PATH = File.expand_path PATH_TO_TR_LIB
+XCODE_TEST_ABS_LIB_PATH = File.expand_path PATH_TO_XCODE_TEST_LIB
 XCODE_TEST_PATH = "#{OUTPUT_DIR}/#{UNIT_TEST_TARGET}.octest/#{UNIT_TEST_TARGET}"
 TEST_SDK_PATH = "\"'$(SDKROOT)/Developer/Library/Frameworks'\""
-TR_LDFLAGS="\"-all_load -ObjC -framework SenTestingKit -lTriumph -L \"#{TR_ABS_LIB_PATH}\" -F #{TEST_SDK_PATH}\""
+XCODE_TEST_LDFLAGS="\"-all_load -ObjC -framework SenTestingKit -lXcodeTest -L \"#{XCODE_TEST_ABS_LIB_PATH}\" -F #{TEST_SDK_PATH}\""
 
 XcodeBuild::Tasks::BuildTask.new(:test) do |task|
   task.scheme = UNIT_TEST_TARGET
@@ -29,7 +29,7 @@ XcodeBuild::Tasks::BuildTask.new(:app) do |task|
   task.formatter = XcodeBuild::Formatters::ProgressFormatter.new
   task.add_build_setting("CONFIGURATION_BUILD_DIR", OUTPUT_DIR)
   
-  task.add_build_setting "OTHER_LDFLAGS", TR_LDFLAGS
+  task.add_build_setting "OTHER_LDFLAGS", XCODE_TEST_LDFLAGS
   puts task.build_opts
 end
 
