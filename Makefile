@@ -13,8 +13,8 @@ MAIN_APP_TARGET=TriumphSample
 # Calculate build settings to feed in
 OUTPUT_DIR=/tmp/xcodetest/$(MAIN_APP_TARGET)
 TR_ABS_LIB_PATH=`pwd`/$(PATH_TO_TR_LIB)
-TR_UNIT_TEST_PATH=$(OUTPUT_DIR)/$(UNIT_TEST_TARGET).octest/$(UNIT_TEST_TARGET)
-TR_LDFLAGS="-all_load -ObjC -framework SenTestingKit -lTriumph -L \"$(TR_ABS_LIB_PATH)\" -F \"$$\(SDKROOT\)/Developer/Library/Frameworks\""
+XCODE_TEST_PATH=$(OUTPUT_DIR)/$(UNIT_TEST_TARGET).octest/$(UNIT_TEST_TARGET)
+TR_LDFLAGS="-all_load -ObjC -framework SenTestingKit -lXcodeTest -L \"$(TR_ABS_LIB_PATH)\" -F \"$$\(SDKROOT\)/Developer/Library/Frameworks\""
 
 default: clean build test
 
@@ -24,11 +24,11 @@ clean:
 	xcodebuild -sdk iphonesimulator -scheme $(MAIN_APP_TARGET) clean
 	rm -rf $(OUTPUT_DIR)
 	
-.PHONY: triumph
-triumph:
-	xcodebuild -sdk iphonesimulator -scheme Triumph clean
-	rm -rf libTriumph.a
-	xcodebuild -sdk iphonesimulator -scheme Triumph install
+.PHONY: xcodetest
+xcodetest:
+	xcodebuild -sdk iphonesimulator -scheme XcodeTest clean
+	rm -rf libXcodeTest.a
+	xcodebuild -sdk iphonesimulator -scheme XcodeTest install
 
 .PHONY: build
 build:
@@ -39,5 +39,5 @@ test:
 	@osascript -e 'tell app "iPhone Simulator" to quit'
 	xcodebuild -sdk iphonesimulator -scheme $(UNIT_TEST_TARGET) build CONFIGURATION_BUILD_DIR=$(OUTPUT_DIR)
 	xcodebuild -sdk iphonesimulator -scheme $(MAIN_APP_TARGET) build CONFIGURATION_BUILD_DIR=$(OUTPUT_DIR) OTHER_LDFLAGS=$(TR_LDFLAGS)
-	TR_UNIT_TEST_PATH=$(TR_UNIT_TEST_PATH) waxsim $(OUTPUT_DIR)/$(MAIN_APP_TARGET).app -SenTest All
+	XCODE_TEST_PATH=$(XCODE_TEST_PATH) waxsim $(OUTPUT_DIR)/$(MAIN_APP_TARGET).app -SenTest All
 	@osascript -e 'tell app "iPhone Simulator" to quit'

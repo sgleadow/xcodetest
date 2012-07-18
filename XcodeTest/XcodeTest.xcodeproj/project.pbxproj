@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C99C665815B435C90092A9B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C665715B435C90092A9B4 /* Foundation.framework */; };
-		C99C667F15B436930092A9B4 /* TRTriumph.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C665E15B435C90092A9B4 /* TRTriumph.m */; };
+		C99C667F15B436930092A9B4 /* SGXcodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C665E15B435C90092A9B4 /* SGXcodeTest.m */; };
 		C99C668115B436C30092A9B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C668015B436C30092A9B4 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C99C665415B435C90092A9B4 /* libTriumph.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTriumph.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99C665415B435C90092A9B4 /* libXcodeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXcodeTest.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99C665715B435C90092A9B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C99C665B15B435C90092A9B4 /* Triumph-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Triumph-Prefix.pch"; sourceTree = "<group>"; };
-		C99C665E15B435C90092A9B4 /* TRTriumph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRTriumph.m; sourceTree = "<group>"; };
+		C99C665B15B435C90092A9B4 /* XcodeTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeTest-Prefix.pch"; sourceTree = "<group>"; };
+		C99C665E15B435C90092A9B4 /* SGXcodeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGXcodeTest.m; sourceTree = "<group>"; };
 		C99C666615B435C90092A9B4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		C99C668015B436C30092A9B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -49,7 +49,7 @@
 		C99C664915B435C90092A9B4 = {
 			isa = PBXGroup;
 			children = (
-				C99C665915B435C90092A9B4 /* Triumph */,
+				C99C665915B435C90092A9B4 /* XcodeTest */,
 				C99C665615B435C90092A9B4 /* Frameworks */,
 				C99C665515B435C90092A9B4 /* Products */,
 			);
@@ -60,7 +60,7 @@
 		C99C665515B435C90092A9B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C99C665415B435C90092A9B4 /* libTriumph.a */,
+				C99C665415B435C90092A9B4 /* libXcodeTest.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,21 +75,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C99C665915B435C90092A9B4 /* Triumph */ = {
+		C99C665915B435C90092A9B4 /* XcodeTest */ = {
 			isa = PBXGroup;
 			children = (
-				C99C665B15B435C90092A9B4 /* Triumph-Prefix.pch */,
-				C99C665E15B435C90092A9B4 /* TRTriumph.m */,
+				C99C665B15B435C90092A9B4 /* XcodeTest-Prefix.pch */,
+				C99C665E15B435C90092A9B4 /* SGXcodeTest.m */,
 			);
-			path = Triumph;
-			sourceTree = "<group>";
+			name = XcodeTest;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C99C665315B435C90092A9B4 /* Triumph */ = {
+		C99C665315B435C90092A9B4 /* XcodeTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C99C667915B435C90092A9B4 /* Build configuration list for PBXNativeTarget "Triumph" */;
+			buildConfigurationList = C99C667915B435C90092A9B4 /* Build configuration list for PBXNativeTarget "XcodeTest" */;
 			buildPhases = (
 				C99C665015B435C90092A9B4 /* Sources */,
 				C99C665115B435C90092A9B4 /* Frameworks */,
@@ -99,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = Triumph;
+			name = XcodeTest;
 			productName = Triumph;
-			productReference = C99C665415B435C90092A9B4 /* libTriumph.a */;
+			productReference = C99C665415B435C90092A9B4 /* libXcodeTest.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +113,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Stewart Gleadow";
 			};
-			buildConfigurationList = C99C664E15B435C90092A9B4 /* Build configuration list for PBXProject "Triumph" */;
+			buildConfigurationList = C99C664E15B435C90092A9B4 /* Build configuration list for PBXProject "XcodeTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -125,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C99C665315B435C90092A9B4 /* Triumph */,
+				C99C665315B435C90092A9B4 /* XcodeTest */,
 			);
 		};
 /* End PBXProject section */
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99C667F15B436930092A9B4 /* TRTriumph.m in Sources */,
+				C99C667F15B436930092A9B4 /* SGXcodeTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,10 +193,10 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Triumph/Triumph-Prefix.pch";
+				GCC_PREFIX_HEADER = "XcodeTest-Prefix.pch";
 				INSTALL_PATH = /;
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XcodeTest;
 				SKIP_INSTALL = NO;
 			};
 			name = Debug;
@@ -210,10 +210,10 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Triumph/Triumph-Prefix.pch";
+				GCC_PREFIX_HEADER = "XcodeTest-Prefix.pch";
 				INSTALL_PATH = /;
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XcodeTest;
 				SKIP_INSTALL = NO;
 			};
 			name = Release;
@@ -221,7 +221,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C99C664E15B435C90092A9B4 /* Build configuration list for PBXProject "Triumph" */ = {
+		C99C664E15B435C90092A9B4 /* Build configuration list for PBXProject "XcodeTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C99C667715B435C90092A9B4 /* Debug */,
@@ -230,7 +230,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C99C667915B435C90092A9B4 /* Build configuration list for PBXNativeTarget "Triumph" */ = {
+		C99C667915B435C90092A9B4 /* Build configuration list for PBXNativeTarget "XcodeTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C99C667A15B435C90092A9B4 /* Debug */,

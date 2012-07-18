@@ -1,6 +1,6 @@
 //
-//  Triumph.m
-//  Triumph
+//  SGXcodeTest.m
+//  XcodeTest
 //
 //  Created by Stewart Gleadow on 16/07/12.
 //  Copyright (c) 2012 Stewart Gleadow. All rights reserved.
@@ -10,10 +10,10 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import <dlfcn.h>
 
-@interface TRTriumph : NSObject
+@interface SGXcodeTest : NSObject
 @end
 
-@implementation TRTriumph
+@implementation SGXcodeTest
 
 + (void)load
 {
@@ -29,7 +29,7 @@
 
 + (char *)unitTestObjectFilePath
 {
-    char *unitTestPath = getenv("TR_UNIT_TEST_PATH");
+    char *unitTestPath = getenv("XCODE_TEST_PATH");
     assert(unitTestPath != NULL);
     return unitTestPath;
 }

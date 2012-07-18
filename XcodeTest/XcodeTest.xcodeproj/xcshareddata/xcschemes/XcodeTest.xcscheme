@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C99C665315B435C90092A9B4"
-               BuildableName = "libTriumph.a"
-               BlueprintName = "Triumph"
-               ReferencedContainer = "container:Triumph.xcodeproj">
+               BuildableName = "libXcodeTest.a"
+               BlueprintName = "XcodeTest"
+               ReferencedContainer = "container:XcodeTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "C99C666415B435C90092A9B4"
                BuildableName = "TriumphTests.octest"
                BlueprintName = "TriumphTests"
-               ReferencedContainer = "container:Triumph.xcodeproj">
+               ReferencedContainer = "container:XcodeTest.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
