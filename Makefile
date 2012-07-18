@@ -1,7 +1,5 @@
 # Makefile to build and run the static library and sample test project
 
-default: clean build test
-
 ##################################
 # Parameters defined by the user #
 ##################################
@@ -20,6 +18,8 @@ OUTPUT_DIR=/tmp/xcodetest/$(MAIN_APP_TARGET)
 TR_ABS_LIB_PATH=`pwd`/$(PATH_TO_TR_LIB)
 TR_UNIT_TEST_PATH=$(OUTPUT_DIR)/$(UNIT_TEST_TARGET).octest/$(UNIT_TEST_TARGET)
 TR_LDFLAGS="-all_load -ObjC -framework SenTestingKit -lTriumph -L \"$(TR_ABS_LIB_PATH)\" -F \"$$\(SDKROOT\)/Developer/Library/Frameworks\""
+
+default: clean build test
 
 .PHONY: clean
 clean:
