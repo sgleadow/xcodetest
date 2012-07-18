@@ -36,7 +36,6 @@
 
 + (void)applicationDidBecomeActive:(NSNotification *)notification
 {
-    NSLog(@"\n\n\n==============\nRunning unit tests:\n%s\n==============", [self unitTestObjectFilePath]);
     SenSelfTestMain();
 }
 
