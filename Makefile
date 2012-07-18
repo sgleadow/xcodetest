@@ -23,24 +23,25 @@ default: clean build test
 
 .PHONY: clean
 clean:
-	xcodebuild -sdk iphonesimulator -configuration Debug -scheme $(UNIT_TEST_TARGET) clean
-	xcodebuild -sdk iphonesimulator -configuration Debug -scheme $(MAIN_APP_TARGET) clean
+	xcodebuild -sdk iphonesimulator -scheme $(UNIT_TEST_TARGET) clean
+	xcodebuild -sdk iphonesimulator -scheme $(MAIN_APP_TARGET) clean
 	rm -rf $(OUTPUT_DIR)
 	
 .PHONY: triumph
 triumph:
-	xcodebuild -sdk iphonesimulator -configuration Debug -scheme Triumph clean
+	xcodebuild -sdk iphonesimulator -scheme Triumph clean
 	rm -rf $(PATH_TO_TR_LIB)
 	# TODO: how to be know that the path from project to workspace is ..? (convert to relative path?)
-	xcodebuild -sdk iphonesimulator -configuration Debug -scheme Triumph build CONFIGURATION_BUILD_DIR=../$(PATH_TO_TR_LIB)
+	xcodebuild -sdk iphonesimulator -scheme Triumph build CONFIGURATION_BUILD_DIR=../$(PATH_TO_TR_LIB)
 
 .PHONY: build
 build:
-	xcodebuild -sdk iphonesimulator -configuration Debug -scheme $(MAIN_APP_TARGET) build
+	xcodebuild -sdk iphonesimulator -scheme $(MAIN_APP_TARGET) build
 
 .PHONY: test
 test:
-	osascript -e 'tell app "iPhone Simulator" to quit'
-	xcodebuild -sdk iphonesimulator -configuration Debug -scheme $(UNIT_TEST_TARGET) build CONFIGURATION_BUILD_DIR=$(OUTPUT_DIR)
-	xcodebuild -sdk iphonesimulator -configuration Debug -scheme $(MAIN_APP_TARGET) build CONFIGURATION_BUILD_DIR=$(OUTPUT_DIR) OTHER_LDFLAGS=$(TR_LDFLAGS)
+	@osascript -e 'tell app "iPhone Simulator" to quit'
+	xcodebuild -sdk iphonesimulator -scheme $(UNIT_TEST_TARGET) build CONFIGURATION_BUILD_DIR=$(OUTPUT_DIR)
+	xcodebuild -sdk iphonesimulator -scheme $(MAIN_APP_TARGET) build CONFIGURATION_BUILD_DIR=$(OUTPUT_DIR) OTHER_LDFLAGS=$(TR_LDFLAGS)
 	TR_UNIT_TEST_PATH=$(TR_UNIT_TEST_PATH) waxsim $(OUTPUT_DIR)/$(MAIN_APP_TARGET).app -SenTest All
+	@osascript -e 'tell app "iPhone Simulator" to quit'
