@@ -195,7 +195,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeTest-Prefix.pch";
 				INSTALL_PATH = /;
-				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = XcodeTest;
 				SKIP_INSTALL = NO;
 			};
@@ -212,7 +211,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeTest-Prefix.pch";
 				INSTALL_PATH = /;
-				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = XcodeTest;
 				SKIP_INSTALL = NO;
 			};

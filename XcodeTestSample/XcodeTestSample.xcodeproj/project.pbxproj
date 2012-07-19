@@ -327,6 +327,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeTestSample/XcodeTestSample-Prefix.pch";
 				INFOPLIST_FILE = "XcodeTestSample/XcodeTestSample-Info.plist";
+				OTHER_LDFLAGS = "$(XCODE_TEST_LDFLAGS)";
 				PRODUCT_NAME = XcodeTestSample;
 				WRAPPER_EXTENSION = app;
 			};
@@ -338,6 +339,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeTestSample/XcodeTestSample-Prefix.pch";
 				INFOPLIST_FILE = "XcodeTestSample/XcodeTestSample-Info.plist";
+				OTHER_LDFLAGS = "$(XCODE_TEST_LDFLAGS)";
 				PRODUCT_NAME = XcodeTestSample;
 				WRAPPER_EXTENSION = app;
 			};
