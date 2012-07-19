@@ -8,4 +8,4 @@ if [ ! -f libXcodeTest.a ]; then
 fi
 
 # To use the script, feed in the scheme names (which are also assumed to match the build target names)
-./build_and_run_unit_tests.sh XcodeTestSample XcodeTestSampleTests
+./build_and_run_unit_tests.sh XcodeTestSample XcodeTestSampleFailingTests

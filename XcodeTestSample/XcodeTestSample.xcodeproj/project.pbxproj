@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91E26AF15B7D2AF00CB0AF3 /* XcodeTestSamplePassingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C65FC15B432FE0092A9B4 /* XcodeTestSamplePassingTests.m */; };
+		C91E26B115B7D2AF00CB0AF3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65EF15B432FE0092A9B4 /* SenTestingKit.framework */; };
+		C91E26B215B7D2AF00CB0AF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65D715B432FD0092A9B4 /* UIKit.framework */; };
+		C91E26B315B7D2AF00CB0AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65D915B432FD0092A9B4 /* Foundation.framework */; };
+		C91E26B515B7D2AF00CB0AF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C99C65F815B432FE0092A9B4 /* InfoPlist.strings */; };
+		C91E26BC15B7D46500CB0AF3 /* XcodeTestSampleFailingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C91E26BB15B7D46500CB0AF3 /* XcodeTestSampleFailingTests.m */; };
 		C99C65D815B432FD0092A9B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65D715B432FD0092A9B4 /* UIKit.framework */; };
 		C99C65DA15B432FD0092A9B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65D915B432FD0092A9B4 /* Foundation.framework */; };
 		C99C65DC15B432FD0092A9B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65DB15B432FD0092A9B4 /* CoreGraphics.framework */; };
@@ -21,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C91E26AD15B7D2AF00CB0AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C99C65CA15B432FD0092A9B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C99C65D215B432FD0092A9B4;
+			remoteInfo = TriumphSample;
+		};
 		C99C65F315B432FE0092A9B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C99C65CA15B432FD0092A9B4 /* Project object */;
@@ -31,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C91E26B915B7D2AF00CB0AF3 /* XcodeTestSampleFailingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeTestSampleFailingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91E26BB15B7D46500CB0AF3 /* XcodeTestSampleFailingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeTestSampleFailingTests.m; sourceTree = "<group>"; };
 		C99C65D315B432FD0092A9B4 /* XcodeTestSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeTestSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99C65D715B432FD0092A9B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C99C65D915B432FD0092A9B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,7 +56,7 @@
 		C99C65E515B432FD0092A9B4 /* XcodeTestSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeTestSample-Prefix.pch"; sourceTree = "<group>"; };
 		C99C65E615B432FE0092A9B4 /* XcodeTestSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeTestSampleAppDelegate.h; sourceTree = "<group>"; };
 		C99C65E715B432FE0092A9B4 /* XcodeTestSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeTestSampleAppDelegate.m; sourceTree = "<group>"; };
-		C99C65EE15B432FE0092A9B4 /* XcodeTestSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeTestSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99C65EE15B432FE0092A9B4 /* XcodeTestSamplePassingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeTestSamplePassingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99C65EF15B432FE0092A9B4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		C99C65F715B432FE0092A9B4 /* XcodeTestSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeTestSampleTests-Info.plist"; sourceTree = "<group>"; };
 		C99C65F915B432FE0092A9B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -49,6 +64,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C91E26B015B7D2AF00CB0AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91E26B115B7D2AF00CB0AF3 /* SenTestingKit.framework in Frameworks */,
+				C91E26B215B7D2AF00CB0AF3 /* UIKit.framework in Frameworks */,
+				C91E26B315B7D2AF00CB0AF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C99C65D015B432FD0092A9B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,7 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				C99C65D315B432FD0092A9B4 /* XcodeTestSample.app */,
-				C99C65EE15B432FE0092A9B4 /* XcodeTestSampleTests.octest */,
+				C99C65EE15B432FE0092A9B4 /* XcodeTestSamplePassingTests.octest */,
+				C91E26B915B7D2AF00CB0AF3 /* XcodeTestSampleFailingTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				C99C65FC15B432FE0092A9B4 /* XcodeTestSamplePassingTests.m */,
+				C91E26BB15B7D46500CB0AF3 /* XcodeTestSampleFailingTests.m */,
 				C99C65F615B432FE0092A9B4 /* Supporting Files */,
 			);
 			path = XcodeTestSampleTests;
@@ -146,6 +173,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C91E26AB15B7D2AF00CB0AF3 /* XcodeTestSampleFailingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91E26B615B7D2AF00CB0AF3 /* Build configuration list for PBXNativeTarget "XcodeTestSampleFailingTests" */;
+			buildPhases = (
+				C91E26AE15B7D2AF00CB0AF3 /* Sources */,
+				C91E26B015B7D2AF00CB0AF3 /* Frameworks */,
+				C91E26B415B7D2AF00CB0AF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C91E26AC15B7D2AF00CB0AF3 /* PBXTargetDependency */,
+			);
+			name = XcodeTestSampleFailingTests;
+			productName = TriumphSampleTests;
+			productReference = C91E26B915B7D2AF00CB0AF3 /* XcodeTestSampleFailingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		C99C65D215B432FD0092A9B4 /* XcodeTestSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C99C660015B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "XcodeTestSample" */;
@@ -163,9 +208,9 @@
 			productReference = C99C65D315B432FD0092A9B4 /* XcodeTestSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C99C65ED15B432FE0092A9B4 /* XcodeTestSampleTests */ = {
+		C99C65ED15B432FE0092A9B4 /* XcodeTestSamplePassingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C99C660315B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "XcodeTestSampleTests" */;
+			buildConfigurationList = C99C660315B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "XcodeTestSamplePassingTests" */;
 			buildPhases = (
 				C99C65E915B432FE0092A9B4 /* Sources */,
 				C99C65EA15B432FE0092A9B4 /* Frameworks */,
@@ -176,9 +221,9 @@
 			dependencies = (
 				C99C65F415B432FE0092A9B4 /* PBXTargetDependency */,
 			);
-			name = XcodeTestSampleTests;
+			name = XcodeTestSamplePassingTests;
 			productName = TriumphSampleTests;
-			productReference = C99C65EE15B432FE0092A9B4 /* XcodeTestSampleTests.octest */;
+			productReference = C99C65EE15B432FE0092A9B4 /* XcodeTestSamplePassingTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -204,12 +249,21 @@
 			projectRoot = "";
 			targets = (
 				C99C65D215B432FD0092A9B4 /* XcodeTestSample */,
-				C99C65ED15B432FE0092A9B4 /* XcodeTestSampleTests */,
+				C99C65ED15B432FE0092A9B4 /* XcodeTestSamplePassingTests */,
+				C91E26AB15B7D2AF00CB0AF3 /* XcodeTestSampleFailingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C91E26B415B7D2AF00CB0AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91E26B515B7D2AF00CB0AF3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C99C65D115B432FD0092A9B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +283,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C91E26AE15B7D2AF00CB0AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91E26AF15B7D2AF00CB0AF3 /* XcodeTestSamplePassingTests.m in Sources */,
+				C91E26BC15B7D46500CB0AF3 /* XcodeTestSampleFailingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C99C65CF15B432FD0092A9B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +312,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C91E26AC15B7D2AF00CB0AF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C99C65D215B432FD0092A9B4 /* XcodeTestSample */;
+			targetProxy = C91E26AD15B7D2AF00CB0AF3 /* PBXContainerItemProxy */;
+		};
 		C99C65F415B432FE0092A9B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C99C65D215B432FD0092A9B4 /* XcodeTestSample */;
@@ -276,6 +344,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C91E26B715B7D2AF00CB0AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XcodeTestSample.app/XcodeTestSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeTestSample/XcodeTestSample-Prefix.pch";
+				INFOPLIST_FILE = "XcodeTestSampleTests/XcodeTestSampleTests-Info.plist";
+				PRODUCT_NAME = XcodeTestSampleFailingTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C91E26B815B7D2AF00CB0AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XcodeTestSample.app/XcodeTestSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeTestSample/XcodeTestSample-Prefix.pch";
+				INFOPLIST_FILE = "XcodeTestSampleTests/XcodeTestSampleTests-Info.plist";
+				PRODUCT_NAME = XcodeTestSampleFailingTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		C99C65FE15B432FE0092A9B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,7 +458,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeTestSample/XcodeTestSample-Prefix.pch";
 				INFOPLIST_FILE = "XcodeTestSampleTests/XcodeTestSampleTests-Info.plist";
-				PRODUCT_NAME = XcodeTestSampleTests;
+				PRODUCT_NAME = XcodeTestSamplePassingTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -373,7 +475,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeTestSample/XcodeTestSample-Prefix.pch";
 				INFOPLIST_FILE = "XcodeTestSampleTests/XcodeTestSampleTests-Info.plist";
-				PRODUCT_NAME = XcodeTestSampleTests;
+				PRODUCT_NAME = XcodeTestSamplePassingTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -382,6 +484,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C91E26B615B7D2AF00CB0AF3 /* Build configuration list for PBXNativeTarget "XcodeTestSampleFailingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91E26B715B7D2AF00CB0AF3 /* Debug */,
+				C91E26B815B7D2AF00CB0AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C99C65CD15B432FD0092A9B4 /* Build configuration list for PBXProject "XcodeTestSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -400,7 +511,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C99C660315B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "XcodeTestSampleTests" */ = {
+		C99C660315B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "XcodeTestSamplePassingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C99C660415B432FE0092A9B4 /* Debug */,

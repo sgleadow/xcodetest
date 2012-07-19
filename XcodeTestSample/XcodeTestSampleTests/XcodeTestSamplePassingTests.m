@@ -1,5 +1,5 @@
 //
-//  TriumphSampleTests.m
+//  XcodeTestSamplePassingTests.m
 //  TriumphSampleTests
 //
 //  Created by Stewart Gleadow on 16/07/12.
@@ -9,15 +9,9 @@
 #import <SenTestingKit/SenTestingKit.h>
 
 @interface XcodeTestSamplePassingTests : SenTestCase
-
 @end
 
 @implementation XcodeTestSamplePassingTests
-
-- (void)testSampleThatAlwaysFails
-{
-    STAssertNil(@"but I'm not nil", @"Should be nil");
-}
 
 - (void)testSampleThatAlwaysPasses
 {
