@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'TriumphSample' target in the 'TriumphSample' project
+// Prefix header for all source files of the 'XcodeTestSample' target in the 'XcodeTestSample' project
 //
 
 #import <Availability.h>

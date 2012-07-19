@@ -13,5 +13,5 @@ xcodetest:
 
 .PHONY: bundle
 bundle: xcodetest
-	zip -r xcodetest.zip libXcodeTest.a build_and_run_unit_tests.sh
+	zip -r xcodetest.zip libXcodeTest.a build_and_run_unit_tests.sh README.markdown
 
