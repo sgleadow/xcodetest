@@ -15,3 +15,4 @@ build/
 *.LOCAL.*
 *.BASE.*
 libXcodeTest.a
+xcodetest.zip
