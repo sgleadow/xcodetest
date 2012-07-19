@@ -6,9 +6,13 @@
 //  Copyright (c) 2012 Stewart Gleadow. All rights reserved.
 //
 
-#import "TriumphSampleTests.h"
+#import <SenTestingKit/SenTestingKit.h>
 
-@implementation TriumphSampleTests
+@interface XcodeTestSamplePassingTests : SenTestCase
+
+@end
+
+@implementation XcodeTestSamplePassingTests
 
 - (void)testSampleThatAlwaysFails
 {

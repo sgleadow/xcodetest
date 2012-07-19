@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TRAppDelegate : UIResponder <UIApplicationDelegate>
+@interface XcodeTestSampleAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

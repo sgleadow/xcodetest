@@ -8,30 +8,30 @@
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C99C65D215B432FD0092A9B4"
-               BuildableName = "TriumphSample.app"
-               BlueprintName = "TriumphSample"
-               ReferencedContainer = "container:TriumphSample.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
             buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C99C65D215B432FD0092A9B4"
+               BuildableName = "XcodeTestSample.app"
+               BlueprintName = "XcodeTestSample"
+               ReferencedContainer = "container:XcodeTestSample.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "C99C65ED15B432FE0092A9B4"
-               BuildableName = "TriumphSampleTests.octest"
-               BlueprintName = "TriumphSampleTests"
-               ReferencedContainer = "container:TriumphSample.xcodeproj">
+               BuildableName = "XcodeTestSampleTests.octest"
+               BlueprintName = "XcodeTestSampleTests"
+               ReferencedContainer = "container:XcodeTestSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,21 +47,12 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C99C65ED15B432FE0092A9B4"
-               BuildableName = "TriumphSampleTests.octest"
-               BlueprintName = "TriumphSampleTests"
-               ReferencedContainer = "container:TriumphSample.xcodeproj">
+               BuildableName = "XcodeTestSampleTests.octest"
+               BlueprintName = "XcodeTestSampleTests"
+               ReferencedContainer = "container:XcodeTestSample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C99C65D215B432FD0092A9B4"
-            BuildableName = "TriumphSample.app"
-            BlueprintName = "TriumphSample"
-            ReferencedContainer = "container:TriumphSample.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -72,15 +63,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C99C65D215B432FD0092A9B4"
-            BuildableName = "TriumphSample.app"
-            BlueprintName = "TriumphSample"
-            ReferencedContainer = "container:TriumphSample.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,15 +72,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C99C65D215B432FD0092A9B4"
-            BuildableName = "TriumphSample.app"
-            BlueprintName = "TriumphSample"
-            ReferencedContainer = "container:TriumphSample.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

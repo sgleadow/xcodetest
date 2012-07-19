@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Stewart Gleadow. All rights reserved.
 //
 
-#import "TRAppDelegate.h"
+#import "XcodeTestSampleAppDelegate.h"
 
-@implementation TRAppDelegate
+@implementation XcodeTestSampleAppDelegate
 
 @synthesize window = _window;
 

@@ -12,12 +12,12 @@
 		C99C65DC15B432FD0092A9B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65DB15B432FD0092A9B4 /* CoreGraphics.framework */; };
 		C99C65E215B432FD0092A9B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C99C65E015B432FD0092A9B4 /* InfoPlist.strings */; };
 		C99C65E415B432FD0092A9B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C65E315B432FD0092A9B4 /* main.m */; };
-		C99C65E815B432FE0092A9B4 /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C65E715B432FE0092A9B4 /* TRAppDelegate.m */; };
+		C99C65E815B432FE0092A9B4 /* XcodeTestSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C65E715B432FE0092A9B4 /* XcodeTestSampleAppDelegate.m */; };
 		C99C65F015B432FE0092A9B4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65EF15B432FE0092A9B4 /* SenTestingKit.framework */; };
 		C99C65F115B432FE0092A9B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65D715B432FD0092A9B4 /* UIKit.framework */; };
 		C99C65F215B432FE0092A9B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C65D915B432FD0092A9B4 /* Foundation.framework */; };
 		C99C65FA15B432FE0092A9B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C99C65F815B432FE0092A9B4 /* InfoPlist.strings */; };
-		C99C65FD15B432FE0092A9B4 /* TriumphSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C65FC15B432FE0092A9B4 /* TriumphSampleTests.m */; };
+		C99C65FD15B432FE0092A9B4 /* XcodeTestSamplePassingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C65FC15B432FE0092A9B4 /* XcodeTestSamplePassingTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,22 +31,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C99C65D315B432FD0092A9B4 /* TriumphSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriumphSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99C65D315B432FD0092A9B4 /* XcodeTestSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeTestSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99C65D715B432FD0092A9B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C99C65D915B432FD0092A9B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C99C65DB15B432FD0092A9B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C99C65DF15B432FD0092A9B4 /* TriumphSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TriumphSample-Info.plist"; sourceTree = "<group>"; };
+		C99C65DF15B432FD0092A9B4 /* XcodeTestSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeTestSample-Info.plist"; sourceTree = "<group>"; };
 		C99C65E115B432FD0092A9B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C99C65E315B432FD0092A9B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C99C65E515B432FD0092A9B4 /* TriumphSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TriumphSample-Prefix.pch"; sourceTree = "<group>"; };
-		C99C65E615B432FE0092A9B4 /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
-		C99C65E715B432FE0092A9B4 /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
-		C99C65EE15B432FE0092A9B4 /* TriumphSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriumphSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99C65E515B432FD0092A9B4 /* XcodeTestSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeTestSample-Prefix.pch"; sourceTree = "<group>"; };
+		C99C65E615B432FE0092A9B4 /* XcodeTestSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeTestSampleAppDelegate.h; sourceTree = "<group>"; };
+		C99C65E715B432FE0092A9B4 /* XcodeTestSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeTestSampleAppDelegate.m; sourceTree = "<group>"; };
+		C99C65EE15B432FE0092A9B4 /* XcodeTestSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeTestSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99C65EF15B432FE0092A9B4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C99C65F715B432FE0092A9B4 /* TriumphSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TriumphSampleTests-Info.plist"; sourceTree = "<group>"; };
+		C99C65F715B432FE0092A9B4 /* XcodeTestSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeTestSampleTests-Info.plist"; sourceTree = "<group>"; };
 		C99C65F915B432FE0092A9B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C99C65FB15B432FE0092A9B4 /* TriumphSampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriumphSampleTests.h; sourceTree = "<group>"; };
-		C99C65FC15B432FE0092A9B4 /* TriumphSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriumphSampleTests.m; sourceTree = "<group>"; };
+		C99C65FC15B432FE0092A9B4 /* XcodeTestSamplePassingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeTestSamplePassingTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +75,8 @@
 		C99C65C815B432FD0092A9B4 = {
 			isa = PBXGroup;
 			children = (
-				C99C65DD15B432FD0092A9B4 /* TriumphSample */,
-				C99C65F515B432FE0092A9B4 /* TriumphSampleTests */,
+				C99C65DD15B432FD0092A9B4 /* XcodeTestSample */,
+				C99C65F515B432FE0092A9B4 /* XcodeTestSampleTests */,
 				C99C65D615B432FD0092A9B4 /* Frameworks */,
 				C99C65D415B432FD0092A9B4 /* Products */,
 			);
@@ -88,8 +87,8 @@
 		C99C65D415B432FD0092A9B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C99C65D315B432FD0092A9B4 /* TriumphSample.app */,
-				C99C65EE15B432FE0092A9B4 /* TriumphSampleTests.octest */,
+				C99C65D315B432FD0092A9B4 /* XcodeTestSample.app */,
+				C99C65EE15B432FE0092A9B4 /* XcodeTestSampleTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,41 +104,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C99C65DD15B432FD0092A9B4 /* TriumphSample */ = {
+		C99C65DD15B432FD0092A9B4 /* XcodeTestSample */ = {
 			isa = PBXGroup;
 			children = (
-				C99C65E615B432FE0092A9B4 /* TRAppDelegate.h */,
-				C99C65E715B432FE0092A9B4 /* TRAppDelegate.m */,
+				C99C65E615B432FE0092A9B4 /* XcodeTestSampleAppDelegate.h */,
+				C99C65E715B432FE0092A9B4 /* XcodeTestSampleAppDelegate.m */,
 				C99C65DE15B432FD0092A9B4 /* Supporting Files */,
 			);
-			path = TriumphSample;
-			sourceTree = "<group>";
+			path = XcodeTestSample;
+			sourceTree = SOURCE_ROOT;
 		};
 		C99C65DE15B432FD0092A9B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C99C65DF15B432FD0092A9B4 /* TriumphSample-Info.plist */,
+				C99C65DF15B432FD0092A9B4 /* XcodeTestSample-Info.plist */,
 				C99C65E015B432FD0092A9B4 /* InfoPlist.strings */,
 				C99C65E315B432FD0092A9B4 /* main.m */,
-				C99C65E515B432FD0092A9B4 /* TriumphSample-Prefix.pch */,
+				C99C65E515B432FD0092A9B4 /* XcodeTestSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C99C65F515B432FE0092A9B4 /* TriumphSampleTests */ = {
+		C99C65F515B432FE0092A9B4 /* XcodeTestSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				C99C65FB15B432FE0092A9B4 /* TriumphSampleTests.h */,
-				C99C65FC15B432FE0092A9B4 /* TriumphSampleTests.m */,
+				C99C65FC15B432FE0092A9B4 /* XcodeTestSamplePassingTests.m */,
 				C99C65F615B432FE0092A9B4 /* Supporting Files */,
 			);
-			path = TriumphSampleTests;
-			sourceTree = "<group>";
+			path = XcodeTestSampleTests;
+			sourceTree = SOURCE_ROOT;
 		};
 		C99C65F615B432FE0092A9B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C99C65F715B432FE0092A9B4 /* TriumphSampleTests-Info.plist */,
+				C99C65F715B432FE0092A9B4 /* XcodeTestSampleTests-Info.plist */,
 				C99C65F815B432FE0092A9B4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -148,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C99C65D215B432FD0092A9B4 /* TriumphSample */ = {
+		C99C65D215B432FD0092A9B4 /* XcodeTestSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C99C660015B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "TriumphSample" */;
+			buildConfigurationList = C99C660015B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "XcodeTestSample" */;
 			buildPhases = (
 				C99C65CF15B432FD0092A9B4 /* Sources */,
 				C99C65D015B432FD0092A9B4 /* Frameworks */,
@@ -160,14 +158,14 @@
 			);
 			dependencies = (
 			);
-			name = TriumphSample;
+			name = XcodeTestSample;
 			productName = TriumphSample;
-			productReference = C99C65D315B432FD0092A9B4 /* TriumphSample.app */;
+			productReference = C99C65D315B432FD0092A9B4 /* XcodeTestSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C99C65ED15B432FE0092A9B4 /* TriumphSampleTests */ = {
+		C99C65ED15B432FE0092A9B4 /* XcodeTestSampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C99C660315B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "TriumphSampleTests" */;
+			buildConfigurationList = C99C660315B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "XcodeTestSampleTests" */;
 			buildPhases = (
 				C99C65E915B432FE0092A9B4 /* Sources */,
 				C99C65EA15B432FE0092A9B4 /* Frameworks */,
@@ -178,9 +176,9 @@
 			dependencies = (
 				C99C65F415B432FE0092A9B4 /* PBXTargetDependency */,
 			);
-			name = TriumphSampleTests;
+			name = XcodeTestSampleTests;
 			productName = TriumphSampleTests;
-			productReference = C99C65EE15B432FE0092A9B4 /* TriumphSampleTests.octest */;
+			productReference = C99C65EE15B432FE0092A9B4 /* XcodeTestSampleTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +191,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Stewart Gleadow";
 			};
-			buildConfigurationList = C99C65CD15B432FD0092A9B4 /* Build configuration list for PBXProject "TriumphSample" */;
+			buildConfigurationList = C99C65CD15B432FD0092A9B4 /* Build configuration list for PBXProject "XcodeTestSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -205,8 +203,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C99C65D215B432FD0092A9B4 /* TriumphSample */,
-				C99C65ED15B432FE0092A9B4 /* TriumphSampleTests */,
+				C99C65D215B432FD0092A9B4 /* XcodeTestSample */,
+				C99C65ED15B432FE0092A9B4 /* XcodeTestSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,7 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C99C65E415B432FD0092A9B4 /* main.m in Sources */,
-				C99C65E815B432FE0092A9B4 /* TRAppDelegate.m in Sources */,
+				C99C65E815B432FE0092A9B4 /* XcodeTestSampleAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99C65FD15B432FE0092A9B4 /* TriumphSampleTests.m in Sources */,
+				C99C65FD15B432FE0092A9B4 /* XcodeTestSamplePassingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +251,7 @@
 /* Begin PBXTargetDependency section */
 		C99C65F415B432FE0092A9B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C99C65D215B432FD0092A9B4 /* TriumphSample */;
+			target = C99C65D215B432FD0092A9B4 /* XcodeTestSample */;
 			targetProxy = C99C65F315B432FE0092A9B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -327,9 +325,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TriumphSample/TriumphSample-Prefix.pch";
-				INFOPLIST_FILE = "TriumphSample/TriumphSample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "XcodeTestSample/XcodeTestSample-Prefix.pch";
+				INFOPLIST_FILE = "XcodeTestSample/XcodeTestSample-Info.plist";
+				PRODUCT_NAME = XcodeTestSample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -338,9 +336,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TriumphSample/TriumphSample-Prefix.pch";
-				INFOPLIST_FILE = "TriumphSample/TriumphSample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "XcodeTestSample/XcodeTestSample-Prefix.pch";
+				INFOPLIST_FILE = "XcodeTestSample/XcodeTestSample-Info.plist";
+				PRODUCT_NAME = XcodeTestSample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -348,15 +346,15 @@
 		C99C660415B432FE0092A9B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TriumphSample.app/TriumphSample";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XcodeTestSample.app/XcodeTestSample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TriumphSample/TriumphSample-Prefix.pch";
-				INFOPLIST_FILE = "TriumphSampleTests/TriumphSampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "XcodeTestSample/XcodeTestSample-Prefix.pch";
+				INFOPLIST_FILE = "XcodeTestSampleTests/XcodeTestSampleTests-Info.plist";
+				PRODUCT_NAME = XcodeTestSampleTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -365,15 +363,15 @@
 		C99C660515B432FE0092A9B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TriumphSample.app/TriumphSample";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XcodeTestSample.app/XcodeTestSample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TriumphSample/TriumphSample-Prefix.pch";
-				INFOPLIST_FILE = "TriumphSampleTests/TriumphSampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "XcodeTestSample/XcodeTestSample-Prefix.pch";
+				INFOPLIST_FILE = "XcodeTestSampleTests/XcodeTestSampleTests-Info.plist";
+				PRODUCT_NAME = XcodeTestSampleTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -382,7 +380,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C99C65CD15B432FD0092A9B4 /* Build configuration list for PBXProject "TriumphSample" */ = {
+		C99C65CD15B432FD0092A9B4 /* Build configuration list for PBXProject "XcodeTestSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C99C65FE15B432FE0092A9B4 /* Debug */,
@@ -391,7 +389,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C99C660015B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "TriumphSample" */ = {
+		C99C660015B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "XcodeTestSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C99C660115B432FE0092A9B4 /* Debug */,
@@ -400,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C99C660315B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "TriumphSampleTests" */ = {
+		C99C660315B432FE0092A9B4 /* Build configuration list for PBXNativeTarget "XcodeTestSampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C99C660415B432FE0092A9B4 /* Debug */,

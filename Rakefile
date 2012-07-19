@@ -3,8 +3,8 @@ require 'xcodebuild'
 require 'xcoder'
 
 # User entered parameters
-MAIN_APP_TARGET = "TriumphSample"
-UNIT_TEST_TARGET = "TriumphSampleTests"
+MAIN_APP_TARGET = "XcodeTestSample"
+UNIT_TEST_TARGET = "XcodeTestSampleTests"
 PATH_TO_XCODE_TEST_LIB = "."
 
 # Build settings
