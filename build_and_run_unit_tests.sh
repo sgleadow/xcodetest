@@ -47,6 +47,22 @@ if [[ $? != 0 ]]; then
 fi
 
 # Run the app in the simulator, will automatically load and run unit tests
-XCODE_TEST_PATH=${XCODE_TEST_PATH} waxsim ${OUTPUT_DIR}/${MAIN_APP_TARGET}.app -SenTest All
+OUT_FILE=${OUTPUT_DIR}/waxsim.out
+waxsim ${OUTPUT_DIR}/${MAIN_APP_TARGET}.app -SenTest All -e XCODE_TEST_PATH=${XCODE_TEST_PATH} > ${OUT_FILE} 2>&1
 
-# TODO: Parse output for success/failure so error code is right
+# if there was a failure, show what waxsim was hiding and crucially return with a non-zero exit code
+grep -q ": error:" $OUT_FILE
+success=`exec grep -c ": error:" $OUT_FILE`
+
+if [[ $success != 0 ]]; then
+    cat $OUT_FILE
+    echo "==========================================="
+    echo "GUI Tests failed"
+    echo "==========================================="
+    exit 1
+else
+    grep -v "started" $OUT_FILE | grep "Test Case"
+    echo "==========================================="
+    echo "GUI Tests passed"
+    echo "==========================================="
+fi
