@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C99C65ED15B432FE0092A9B4"
-               BuildableName = "XcodeTestSampleTests.octest"
+               BuildableName = "XcodeTestSamplePassingTests.octest"
                BlueprintName = "XcodeTestSamplePassingTests"
                ReferencedContainer = "container:XcodeTestSample.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C99C65ED15B432FE0092A9B4"
-               BuildableName = "XcodeTestSampleTests.octest"
+               BuildableName = "XcodeTestSamplePassingTests.octest"
                BlueprintName = "XcodeTestSamplePassingTests"
                ReferencedContainer = "container:XcodeTestSample.xcodeproj">
             </BuildableReference>
@@ -62,6 +62,7 @@
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      enableOpenGLFrameCaptureMode = "0"
       allowLocationSimulation = "YES">
       <AdditionalOptions>
       </AdditionalOptions>
