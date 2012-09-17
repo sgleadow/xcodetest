@@ -14,11 +14,6 @@
 
 @implementation XcodeTestSamplePassingTests
 
-- (void)testSampleThatAlwaysFails
-{
-    STAssertNil(@"but I'm not nil", @"Should be nil");
-}
-
 - (void)testSampleThatAlwaysPasses
 {
     STAssertNotNil(@"I'm not nil", @"Should not be nil");
