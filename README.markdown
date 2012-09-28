@@ -54,7 +54,7 @@ If the `XCODE_TEST_PATH` variable is missing, it aborts. If the unit test object
 
 Apple differentiates between 'logic' unit tests and 'application' unit tests. Logic unit tests only depend on Foundation libraries that are common to both OS X and iOS and can run directly on your development machine. Logic tests run on the command line simply by specifying TEST_AFTER_BUILD=YES when running `xcodebuild`. Application unit tests depend on iOS frameworks, like UIKit, and must run in the context of a host app inside the iOS simulator. Running application tests on the command line is not supported by Apple. You used to be able to get it working by hacking the underlying shell script, which I [wrote up already](http://www.stewgleadow.com/blog/2012/02/09/running-ocunit-and-kiwi-tests-on-the-command-line/).
 
-However, these hacks are flakey and don't work with the lastest versions of Xcode. There is a radar for the [bug running command line unit tests](http://openradar.appspot.com/12306879). This tool should get you going in the mean time.
+However, these hacks are flakey and don't work with the lastest versions of Xcode. There is a radar for the [bug running command line unit tests](http://openradar.appspot.com/12306879). This tool should get you going in the mean time. There is a [stackoverflow post](http://stackoverflow.com/questions/12557935/xcode-4-5-command-line-unit-testing) about the issue as well.
 
 
 ## Feedback
