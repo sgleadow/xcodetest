@@ -36,6 +36,7 @@ if [[ $? != 0 ]]; then
 fi
 
 # Build the main app, with libXcodeTest.a linked in
+echo "xcodebuild -sdk iphonesimulator -scheme ${MAIN_APP_TARGET} build CONFIGURATION_BUILD_DIR=\"${OUTPUT_DIR}\" XCODE_TEST_LDFLAGS=\"${XCODE_TEST_LDFLAGS}\""
 xcodebuild -sdk iphonesimulator -scheme ${MAIN_APP_TARGET} build CONFIGURATION_BUILD_DIR="${OUTPUT_DIR}" XCODE_TEST_LDFLAGS="${XCODE_TEST_LDFLAGS}"
 if [[ $? != 0 ]]; then
   echo "Failed to build app!"
