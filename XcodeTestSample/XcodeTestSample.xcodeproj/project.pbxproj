@@ -180,6 +180,7 @@
 				C91E26AE15B7D2AF00CB0AF3 /* Sources */,
 				C91E26B015B7D2AF00CB0AF3 /* Frameworks */,
 				C91E26B415B7D2AF00CB0AF3 /* Resources */,
+				C924254E16175C2700E5F418 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -215,6 +216,7 @@
 				C99C65E915B432FE0092A9B4 /* Sources */,
 				C99C65EA15B432FE0092A9B4 /* Frameworks */,
 				C99C65EB15B432FE0092A9B4 /* Resources */,
+				C924254816175BDC00E5F418 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -281,6 +283,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C924254816175BDC00E5F418 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/RunPlatformUnitTests.sh\"";
+		};
+		C924254E16175C2700E5F418 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/RunPlatformUnitTests.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C91E26AE15B7D2AF00CB0AF3 /* Sources */ = {
