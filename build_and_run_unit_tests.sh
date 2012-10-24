@@ -23,7 +23,7 @@ fi
 # Calculate the variables to feed into the build
 OUTPUT_DIR=/tmp/xcodetest/${MAIN_APP_TARGET}
 XCODE_TEST_PATH=${OUTPUT_DIR}/${UNIT_TEST_TARGET}.octest/${UNIT_TEST_TARGET}
-XCODE_TEST_LDFLAGS="-all_load -ObjC -framework SenTestingKit ${LINK_TO_XCODE_TEST_LIB} -F \"$\(SDKROOT\)/Developer/Library/Frameworks\""
+XCODE_TEST_LDFLAGS="-framework SenTestingKit ${LINK_TO_XCODE_TEST_LIB} -F \"$\(SDKROOT\)/Developer/Library/Frameworks\""
 
 # More reliable if the simulator is not already running
 osascript -e 'tell app "iPhone Simulator" to quit'
