@@ -1,6 +1,6 @@
 //
 //  XcodeTestSampleFailingTests.m
-//  TriumphSampleTests
+//  XcodeTestSampleTests
 //
 //  Created by Stewart Gleadow on 16/07/12.
 //  Copyright (c) 2012 Stewart Gleadow
