@@ -1,5 +1,5 @@
 //
-//  XcodeTestSampleLogicTests.m
+//  XcodeTestSampleNonUITests.m
 //  XcodeTestSampleTests
 //
 //  Created by Stewart Gleadow on 16/07/12.
@@ -25,15 +25,15 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface XcodeTestSampleLogicTests : SenTestCase
+@interface XcodeTestSampleNonUITests : SenTestCase
 @end
 
-@implementation XcodeTestSampleLogicTests
+@implementation XcodeTestSampleNonUITests
 
 - (void)testSampleThatDoesNotNeedAUIEnvironment
 {
-  STAssertTrue(YES, @"It does do something");
-  STAssertEquals((2+2), 4, @"Yep, the basics work");
+    STAssertTrue(YES, @"It does do something");
+    STAssertEquals((2+2), 4, @"Yep, the basics work");
 }
 
 @end

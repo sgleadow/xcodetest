@@ -16,9 +16,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C9DD9CF01638C44E0038B5F4"
-               BuildableName = "XcodeTestSampleFailingTests.octest"
-               BlueprintName = "XcodeTestSampleLogicTests"
+               BlueprintIdentifier = "C9DD9D091638C7990038B5F4"
+               BuildableName = "XcodeTestSampleNonUITests.octest"
+               BlueprintName = "XcodeTestSampleNonUITests"
                ReferencedContainer = "container:XcodeTestSample.xcodeproj">
             </BuildableReference>
          </TestableReference>
