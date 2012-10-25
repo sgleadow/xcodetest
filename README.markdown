@@ -57,6 +57,12 @@ Apple differentiates between 'logic' unit tests and 'application' unit tests. Lo
 However, these hacks are flakey and don't work with the lastest versions of Xcode. There is a radar for the [bug running command line unit tests](http://openradar.appspot.com/12306879). This tool should get you going in the mean time. There is a [stackoverflow post](http://stackoverflow.com/questions/12557935/xcode-4-5-command-line-unit-testing) about the issue as well.
 
 
+## Known Issues
+
+- If you use workspaces, and rely on Xcode picking up implicit dependencies, these don't seem to get detected when running `xcodebuild`, so you might have to edit the script and add your own `-workspace` option
+
+- Some people just use a single scheme that compiles both your app and your unit tests. This hack is to simple to deal with that case.
+
 ## Feedback
 
 Please raise issues if you find defects or have a feature request.
