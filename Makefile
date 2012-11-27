@@ -23,3 +23,6 @@ logic:
 
 passing:
 	xcodebuild -sdk iphonesimulator -scheme XcodeTestSamplePassingTests build ONLY_ACTIVE_ARCH=NO TEST_AFTER_BUILD=YES XCODETEST=YES
+
+failing:
+	xcodebuild -sdk iphonesimulator -scheme XcodeTestSampleFailingTests build ONLY_ACTIVE_ARCH=NO TEST_AFTER_BUILD=YES XCODETEST=YES
