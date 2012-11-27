@@ -1,8 +1,0 @@
-//
-// Prefix header for all source files of the 'XcodeTestSampleNonUITests' target in the 'XcodeTestSampleNonUITests' project
-//
-
-#ifdef __OBJC__
-  #import <UIKit/UIKit.h>
-  #import <Foundation/Foundation.h>
-#endif

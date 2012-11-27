@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C90FE7F0166353DB00E73469"
+               BuildableName = "XcodeTestSampleNonUITests.octest"
+               BlueprintName = "XcodeTestSampleNonUITests"
+               ReferencedContainer = "container:XcodeTestSample.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -16,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C9DD9D091638C7990038B5F4"
+               BlueprintIdentifier = "C90FE7F0166353DB00E73469"
                BuildableName = "XcodeTestSampleNonUITests.octest"
                BlueprintName = "XcodeTestSampleNonUITests"
                ReferencedContainer = "container:XcodeTestSample.xcodeproj">
