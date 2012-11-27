@@ -19,5 +19,5 @@ ui:
 	xcodebuild -sdk iphonesimulator -scheme XcodeTestSamplePassingTests build ONLY_ACTIVE_ARCH=NO TEST_AFTER_BUILD=YES
 
 logic:
-	xcodebuild -sdk iphonesimulator -scheme XcodeTestSampleNonUITests build ONLY_ACTIVE_ARCH=NO TEST_AFTER_BUILD=YES
+	xcodebuild -sdk iphonesimulator -scheme XcodeTestSampleLogicTests build ONLY_ACTIVE_ARCH=NO TEST_AFTER_BUILD=YES
 

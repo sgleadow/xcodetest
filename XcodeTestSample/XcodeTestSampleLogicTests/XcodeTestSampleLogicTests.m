@@ -1,9 +1,9 @@
 //
-//  XcodeTestSampleUITests.m
-//  XcodeTestSampleTests
+//  XcodeTestSampleLogicTests.m
+//  XcodeTestSampleLogicTests
 //
-//  Created by Stewart Gleadow on 16/07/12.
-//  Copyright (c) 2012 Stewart Gleadow
+//  Created by Stewart Gleadow on 27/11/12.
+//  Copyright (c) 2012 Stewart Gleadow. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -25,19 +25,15 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface XcodeTestSampleUITests : SenTestCase
+@interface XcodeTestSampleLogicTests : SenTestCase
 @end
 
-@implementation XcodeTestSampleUITests
+@implementation XcodeTestSampleLogicTests
 
-- (void)testSampleThatRequiresTheUIKitEnvironment
+- (void)testSampleThatDoesNotNeedAUIEnvironment
 {
-    STAssertNotNil([UIApplication sharedApplication].delegate, @"There should be an app delegate");
-}
-
-- (void)testSampleThatRequiresUIFontToWork
-{
-    STAssertNotNil([UIFont systemFontOfSize:12], @"Fonts should work");
+    STAssertTrue(YES, @"It does do something");
+    STAssertEquals((2+2), 4, @"Yep, the basics work");
 }
 
 @end
