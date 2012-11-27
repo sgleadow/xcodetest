@@ -30,6 +30,12 @@
 
 @implementation XcodeTestSampleUITests
 
+- (void)testSampleThatDoesNotNeedAUIEnvironment
+{
+    STAssertTrue(YES, @"It does do something");
+    STAssertEquals((2+2), 4, @"Yep, the basics work");
+}
+
 - (void)testSampleThatRequiresTheUIKitEnvironment
 {
     STAssertNotNil([UIApplication sharedApplication].delegate, @"There should be an app delegate");
