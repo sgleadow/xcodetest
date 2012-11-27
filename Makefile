@@ -15,3 +15,9 @@ xcodetest:
 bundle: xcodetest
 	zip -r xcodetest.zip libXcodeTest.a build_and_run_unit_tests.sh README.markdown
 
+ui:
+	xcodebuild -sdk iphonesimulator -scheme XcodeTestSamplePassingTests build ONLY_ACTIVE_ARCH=NO TEST_AFTER_BUILD=YES
+
+logic:
+	xcodebuild -sdk iphonesimulator -scheme XcodeTestSampleNonUITests build ONLY_ACTIVE_ARCH=NO TEST_AFTER_BUILD=YES
+
