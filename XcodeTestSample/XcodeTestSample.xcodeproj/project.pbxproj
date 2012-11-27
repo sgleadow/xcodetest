@@ -280,6 +280,7 @@
 				C99C65EA15B432FE0092A9B4 /* Frameworks */,
 				C99C65EB15B432FE0092A9B4 /* Resources */,
 				C924254816175BDC00E5F418 /* ShellScript */,
+				C90FE87716649CEE00E73469 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -369,6 +370,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C90FE87716649CEE00E73469 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${XCODETEST}\" = \"YES\" ]; then\n  ../scripts/RunUnitTests.rb\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 		C924254816175BDC00E5F418 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -381,7 +397,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}/RunPlatformUnitTests.sh\"";
+			shellScript = "if [ \"${XCODETEST}\" = \"\" ]; then\n  \"${PROJECT_DIR}/RunPlatformUnitTests.sh\"\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 		C924254E16175C2700E5F418 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -395,6 +412,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PROJECT_DIR}/RunPlatformUnitTests.sh\"";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 

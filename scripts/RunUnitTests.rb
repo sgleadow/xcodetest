@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # Run the unit tests in this test bundle.
 # Use ios-sim to trigger the unit test
 # Reference: http://stackoverflow.com/questions/5403991/xcode-4-run-tests-from-the-command-line-xcodebuild
@@ -11,7 +12,11 @@ end
 
 system %Q{osascript -e 'tell app "iPhone Simulator" to quit'}
 
-launcher_path = "./scripts/ios-sim"
+launcher_path = `which ios-sim`.strip
+if launcher_path.nil?
+  puts "Could not find ios-sim on your system."
+end
+
 test_bundle_path = File.join(ENV['BUILT_PRODUCTS_DIR'], "#{ENV['PRODUCT_NAME']}.#{ENV['WRAPPER_EXTENSION']}")
 test_output_path = File.join(ENV['BUILD_DIR'], "kiwi-tests.out")
 
