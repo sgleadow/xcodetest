@@ -33,7 +33,7 @@ eg.
 
 ## Building libXcodeTest.a from source
 
-Checkout the source from [the github project](http://havent/uploaded/yet) and type `make` in the root of the project to build the static library. To bundle up the library and associated shell scripts to distribute, type `make bundle`.
+Checkout the source from [the github project](https://github.com/sgleadow/xcodetest) and type `make` in the root of the project to build the static library. To bundle up the library and associated shell scripts to distribute, type `make bundle`.
 
 
 ## Dependencies
