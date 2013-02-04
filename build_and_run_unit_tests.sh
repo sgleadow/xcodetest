@@ -32,7 +32,7 @@ osascript -e 'tell app "iPhone Simulator" to quit'
 echo "========================="
 echo "Building unit test bundle"
 echo "========================="
-echo "xcodebuild -sdk iphonesimulator -scheme ${UNIT_TEST_TARGET} build CONFIGURATION_BUILD_DIR=\"${OUTPUT_DIR}\""
+echo "xcodebuild -sdk iphonesimulator -scheme \"${UNIT_TEST_TARGET}\" build CONFIGURATION_BUILD_DIR=\"${OUTPUT_DIR}\""
 echo "========================="
 xcodebuild -sdk iphonesimulator -scheme "${UNIT_TEST_TARGET}" build CONFIGURATION_BUILD_DIR="${OUTPUT_DIR}"
 if [[ $? != 0 ]]; then
@@ -44,7 +44,7 @@ fi
 echo "==========================="
 echo "Building app with xcodetest"
 echo "==========================="
-echo "xcodebuild -sdk iphonesimulator -scheme ${MAIN_APP_TARGET} build CONFIGURATION_BUILD_DIR=\"${OUTPUT_DIR}\" XCODE_TEST_LDFLAGS=\"${XCODE_TEST_LDFLAGS}\""
+echo "xcodebuild -sdk iphonesimulator -scheme \"${MAIN_APP_TARGET}\" build CONFIGURATION_BUILD_DIR=\"${OUTPUT_DIR}\" XCODE_TEST_LDFLAGS=\"${XCODE_TEST_LDFLAGS}\""
 echo "==========================="
 xcodebuild -sdk iphonesimulator -scheme "${MAIN_APP_TARGET}" build CONFIGURATION_BUILD_DIR="${OUTPUT_DIR}" XCODE_TEST_LDFLAGS="${XCODE_TEST_LDFLAGS}"
 if [[ $? != 0 ]]; then
@@ -74,7 +74,7 @@ osascript -e 'tell app "iPhone Simulator" to quit'
 
 # if there was a failure, show what waxsim was hiding and crucially return with a non-zero exit code
 grep -q ": error:" "$OUT_FILE"
-success=`exec grep -c ": error:" $OUT_FILE`
+success=`exec grep -c ": error:" "$OUT_FILE"`
 
 if [[ $success != 0 ]]; then
     echo "================="
