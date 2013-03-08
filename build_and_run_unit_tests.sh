@@ -68,8 +68,7 @@ echo "================="
 
 # Run the app in the simulator, will automatically load and run unit tests
 OUT_FILE="${OUTPUT_DIR}/waxsim.out"
-XCODE_TEST_PATH="${XCODE_TEST_PATH}" waxsim "${OUTPUT_DIR}/${MAIN_APP_TARGET}.app" -SenTest All > "${OUT_FILE}" 2>&1
-cat "${OUT_FILE}"
+XCODE_TEST_PATH="${XCODE_TEST_PATH}" waxsim "${OUTPUT_DIR}/${MAIN_APP_TARGET}.app" -SenTest All | tee "${OUT_FILE}" | 2>&1
 osascript -e 'tell app "iPhone Simulator" to quit'
 
 # if there was a failure, show what waxsim was hiding and crucially return with a non-zero exit code
